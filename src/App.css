@@ -1,52 +1,137 @@
-.container{
-  width:100%;
+.container {
+  width: 100%;
   min-height: 100vh;
-  background-color: #121212;
+  background-color: #0f172a; /* Azul marinho profundo (Psicologia/Confiança) */
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 120px;
+  padding: 80px 20px;
 }
 
-.logo{
-  max-width: 350px;
+/* Estilização do Nome do App */
+.header-text {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.title{
-  color: #FFF;
+.main-title {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #d4af37; /* Dourado (Ética/Evangelho/Luz) */
+  text-shadow: 0px 0px 20px rgba(212, 175, 55, 0.4);
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.title {
+  color: #d4af37;
   margin: 14px 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.category-area{
+.category-area {
   display: flex;
   gap: 14px;
   margin-bottom: 34px;
+  flex-wrap: wrap; /* Garante que não quebre em telas pequenas */
+  justify-content: center;
 }
 
-.category-button{
-  padding: 4px 12px;
-  border-radius: 4px;
+.category-button {
+  padding: 8px 18px;
+  border-radius: 8px;
   cursor: pointer;
+  background-color: #1e293b;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.button-frase{
-  background-color: #1fa4db;
+.category-button:hover {
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+.button-frase {
+  background: linear-gradient(135deg, #1fa4db 0%, #0f52ba 100%);
   border: 0;
-  border-radius: 4px;
-  padding: 8px 16px;
-  color: #FFF;
-  font-size: 16px;
+  border-radius: 50px; /* Botão mais arredondado e moderno */
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(31, 164, 219, 0.3);
 }
 
-.textoFrase{
-  width: 420px;
-  background-color: #fafafa;
-  border-radius: 4px;
+.button-frase:active {
+  transform: scale(0.95);
+}
+
+/* Balão da Frase */
+.textoFrase {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
   text-align: center;
-  padding: 14px 22px;
-  margin: 24px 0 16px 0;
-  line-height: 150%;
-  color: #dd7b22;
+  padding: 30px;
+  margin: 40px 0;
+  line-height: 160%;
+  color: #1e293b; /* Azul escuro para leitura confortável */
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* Detalhe de Aspas antes da frase */
+.textoFrase::before {
+  content: "“";
+  font-size: 50px;
+  color: #d4af37;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .textoFrase {
+    width: 90%;
+    font-size: 18px;
+  }
 }
