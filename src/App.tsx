@@ -224,6 +224,7 @@ function App() {
       </button>
 
       {textoFrase !== "" && <p className="textoFrase">{textoFrase}</p>}
+      <footer className="footer">By Leo Gomes Developer</footer>
     </div>
   );
 }

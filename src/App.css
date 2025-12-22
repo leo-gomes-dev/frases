@@ -114,6 +114,34 @@
   opacity: 0.5;
 }
 
+/* footer */
+.footer {
+  width: 100%;
+  padding: 40px 20px;
+  margin-top: auto; /* Empurra o footer para o fim se o conteúdo for pouco */
+  text-align: center;
+  color: #94a3b8; /* Cinza azulado suave */
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(212, 175, 55, 0.1); /* Linha dourada bem sutil */
+  font-family: "Inter", sans-serif;
+  transition: color 0.3s ease;
+}
+
+/* Efeito de destaque no seu nome ao passar o mouse */
+.footer:hover {
+  color: #d4af37; /* Transição para o dourado do app */
+  cursor: default;
+}
+
+/* Se quiser destacar apenas o "Developer" ou o seu nome */
+.footer::after {
+  content: " 🚀"; /* Um detalhe moderno para devs */
+  font-size: 1rem;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
