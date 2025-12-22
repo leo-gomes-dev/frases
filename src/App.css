@@ -34,10 +34,18 @@
   font-size: 1.1rem;
   font-weight: 300;
 }
+.category-instruction {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
 
 .title {
   color: #d4af37;
-  margin: 14px 0;
+  margin: 10px 0;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;

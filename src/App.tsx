@@ -202,6 +202,10 @@ function App() {
       </header>
 
       <h2 className="title">Categorias</h2>
+      <p className="category-instruction">
+        * Escolha uma categoria e clique no botão para gerar uma frase
+        inspiradora:
+      </p>
       <section className="category-area">
         {allFrases.map((item, index) => (
           <button
