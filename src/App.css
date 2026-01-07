@@ -80,6 +80,8 @@
   border: 0;
   border-radius: 50px; /* Botão mais arredondado e moderno */
   padding: 12px 32px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -126,7 +128,8 @@
 .footer {
   width: 100%;
   padding: 40px 20px;
-  margin-top: auto; /* Empurra o footer para o fim se o conteúdo for pouco */
+  margin-top: 20px auto; /* Empurra o footer para o fim se o conteúdo for pouco */
+
   text-align: center;
   color: #94a3b8; /* Cinza azulado suave */
   font-size: 0.9rem;
@@ -148,6 +151,63 @@
 .footer::after {
   content: " 🚀"; /* Um detalhe moderno para devs */
   font-size: 1rem;
+}
+
+.ask-coffee {
+  text-decoration: none;
+  background-color: transparent; /* Azul Mercado Pago */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 20%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  gap: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in;
+}
+
+.ask-coffee span {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  text-align: center;
+}
+
+.text-apoio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.text-apoio h3 {
+  margin: 5px 0 5px 0;
+  font-size: 0.8rem;
+}
+.text-apoio p {
+  margin: 5px 0 5px 0;
+  font-size: 0.56rem;
+}
+
+.ask-coffee:hover {
+  transform: translateY(-2px);
+  background-color: #009fe383;
+  margin-top: 15px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 480px) {
+  .ask-coffee {
+    min-width: 50%;
+  }
 }
 
 @keyframes fadeIn {
