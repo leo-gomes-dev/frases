@@ -1,54 +1,24 @@
-# React + TypeScript + Vite
+# 🌬️ Pneuma - Quote Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação interativa e minimalista desenvolvida para entregar doses diárias de inspiração. O **Pneuma** foca na entrega imediata de conteúdo, unindo uma estética limpa a uma performance otimizada.
 
-Currently, two official plugins are available:
+O projeto vai além de um simples gerador, servindo como um estudo de caso sobre transições suaves e consumo eficiente de dados assíncronos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
+🚀 **Experimente a experiência:** [pneuma.leogomesdev.com](https://pneuma.leogomesdev.com)
 
-## Expanding the ESLint configuration
+## 🛠️ Expertise Técnica Aplicada
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Neste projeto, foquei em três pilares fundamentais do desenvolvimento frontend moderno:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+*   **Integração de API de Alta Disponibilidade:** Implementação de busca dinâmica de dados para atualização de conteúdo em tempo real, sem necessidade de *refresh* da página, garantindo uma aplicação do tipo SPA (Single Page Application) fluida.
+*   **State Management & Micro-interações:** Controle rigoroso de estados para gerenciar transições e garantir que a troca de frases ocorra com suavidade visual, elevando o nível da experiência do usuário (UX).
+*   **Design Minimalista & Mobile-First:** Interface totalmente responsiva, construída com foco na usabilidade mobile, garantindo que o design se adapte com elegância a qualquer tamanho de tela.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Diferenciais
+- ✨ **Interface Limpa:** Sem distrações, foco total no conteúdo.
+- ⚡ **Performance:** Carregamento instantâneo e otimização de ativos.
+- 📱 **PWA Ready:** Estrutura que permite uma navegação rápida e intuitiva.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+Desenvolvido por **Leo Gomes** | [leogomesdev.com](https://leogomesdev.com)
