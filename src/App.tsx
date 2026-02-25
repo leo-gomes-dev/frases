@@ -236,7 +236,7 @@ function App() {
           <p>Se este trabalho te ajudou, considere me pagar um café!</p>
 
           <a
-            href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=444f1eb39bc44922871a3d10b7350c81"
+            href="https://link.mercadopago.com.br/leogomesdeveloper"
             target="_blank"
             className="ask-coffee"
           >
